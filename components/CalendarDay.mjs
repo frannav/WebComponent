@@ -3,10 +3,10 @@ class CalendarDay extends HTMLElement {
     constructor() {
         super();
         const day = this.getAttribute('day') || 1;
-        const numDay = this.getAttribute('numDay');
+        const numDay = this.getAttribute('numDay') || 1;
         this.innerHTML = `
         <div class = "day">
-        dia ${day}
+        dia ${numDay} ${day}
         </div>
         `
     }
